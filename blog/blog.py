@@ -8,7 +8,7 @@ class Blog:
         self.posts = []
 
     def __repr__(self):
-        return f"{self.title} by {self.author} (0 posts)"
+        return f"{self.title} by {self.author} ({len(self.posts)} posts)"
 
     def create_post(self, title, content):
         self.posts.append(Post(title, content))
